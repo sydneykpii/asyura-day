@@ -95,7 +95,8 @@ button:focus-visible,.rv:focus-visible{outline:3px solid var(--accent);outline-o
 /* generic reveal items */
 .rv{cursor:pointer;position:relative;transition:border-color .2s ease,background .2s ease}
 .rv:not(.veiled){animation:flipin .45s ease}
-.rv.veiled > *{visibility:hidden}
+.rv.veiled{color:transparent!important}
+.rv.veiled *{visibility:hidden}
 .rv.veiled{background:transparent!important;border:2px dashed rgba(70,48,42,.28)!important;box-shadow:none!important}
 .rv.veiled:hover{border-color:var(--accent)!important}
 .rv.veiled::after{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;font-family:var(--head);font-size:clamp(1rem,1.8vw,1.25rem);color:var(--muted)}
